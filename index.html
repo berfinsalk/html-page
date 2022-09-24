@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <center>
+        <h1> SİTE DOLAŞIM MENÜSÜ </h1>
+        <a href="index.html">anasayfa</a>
+        <a href="iletisim.html" target="_blank">iletişm</a>
+        <a href="hakkimizda.html">hakkımızda</a>
+        <hr>
+        <h1> anasayfaya hoşgeldiniz </h1>
+
+            <h2>kayıt formu</h2>
+            <form name="kayıt" action="kayit.php" method="get">     <!-- burda form ekleme işlemi yaptık name formun adı, action onayla butonuna basınca hangi sayfaya gitmesi gerektiğini söyler methodun da getolması gerekir-->
+                AD SOYAD: <input type="text">
+                <br>
+                DOĞUM TARİHİ: <input type="date">
+                <br>
+                DOĞUM YERİ: <select name="iller" >
+                    <option>adana</option>
+                    <option  selected>istanbul</option> <!-- seleted komutu istanbul seçili olarak gelsin demek-->
+                    <option>izmir</option>
+                </select>
+                <br>
+                 CİNSİYET: <input type="radio"  name="c" >kadın <!--radiobutonla ilgili önemli olan kısım name aynı olmalıdır.-->
+                <input type="radio"  name="c" >erkek <br>
+                AKTİVİTELER: <input type="checkbox" name="x" >yüzme     <!--checboxta ise name farklı olmalıdır-->
+                <input type="checkbox" name="y" >kayak <br>
+
+
+                 <input type="submit" value="onayla">
+                 <input type="reset" value="iptal et">
+            </form>
+
+    </center>
+    </nav>
+</body>
+</html>
